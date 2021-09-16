@@ -1,0 +1,34 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  animation: spin 1.1s infinite linear;
+  border: .1em solid #efefef;
+  border-left-color: #8280ce;
+  border-radius: 50%;
+  height: .85em;
+  margin: 0.45em .25em 0 0;
+  position: relative;
+  transform: translateZ(0);
+  width: .85em;
+}
+
+.loading {
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 48px;
+  height: 100vh;
+  left: 0;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+}
